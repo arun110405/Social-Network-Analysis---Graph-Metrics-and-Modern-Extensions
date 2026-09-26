@@ -1,0 +1,91 @@
+# ==========================================
+# Social Network Analysis Project
+# University of Liverpool MSc Dissertation
+# ==========================================
+
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled Python files
+*.so
+*.pyd
+
+# ----------------------------
+# Virtual Environments
+# ----------------------------
+.venv/
+venv/
+env/
+
+# ----------------------------
+# VS Code / IDE
+# ----------------------------
+.vscode/
+.idea/
+
+# ----------------------------
+# Jupyter Notebook
+# ----------------------------
+.ipynb_checkpoints/
+
+# ----------------------------
+# Pytest
+# ----------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ----------------------------
+# Logs
+# ----------------------------
+logs/
+*.log
+
+# ----------------------------
+# Streamlit
+# ----------------------------
+.streamlit/
+
+# ----------------------------
+# Generated Results
+# ----------------------------
+results/
+!results/
+!results/.gitkeep
+
+# ----------------------------
+# Operating System Files
+# ----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------
+# Temporary Files
+# ----------------------------
+*.tmp
+*.temp
+
+# ----------------------------
+# Build / Distribution Files
+# ----------------------------
+build/
+dist/
+*.egg-info/
+
+# ----------------------------
+# Environment Variables / Secrets
+# ----------------------------
+.env
+.env.*
+
+# ----------------------------
+# Editor / Backup Files
+# ----------------------------
+*.swp
+*.swo
+*~
