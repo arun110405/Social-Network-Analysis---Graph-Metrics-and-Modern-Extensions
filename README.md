@@ -146,11 +146,13 @@ changes in the network?
 
 ---
 
-7. Project Structure
+## 7. Project Structure
 
+```text
 Social-Network-Analysis/
 │
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 ├── app.py
 ├── .gitignore
@@ -165,6 +167,7 @@ Social-Network-Analysis/
 │   └── Explainability.py
 │
 ├── modules/
+│   ├── __init__.py
 │   ├── cache_manager.py
 │   ├── centrality.py
 │   ├── community_detection.py
@@ -182,30 +185,35 @@ Social-Network-Analysis/
 │   └── visualization.py
 │
 ├── utils/
-│   ├── helper.py
-│   ├── logger.py
+│   ├── __init__.py
+│   ├── config.py
 │   ├── constants.py
-│   └── __init__.py
+│   └── logger.py
 │
 ├── data/
 │   └── raw/
-│       ├── email_eu_core/
+│       ├── email_eu/
+│       │   └── email-Eu-Core.txt
 │       └── web_google/
+│           └── web-Google.txt
 │
 ├── evaluation/
 │   └── pagerank_sensitivity.py
 │
 └── tests/
     ├── conftest.py
-    ├── test_centrality.py
     ├── test_cache_manager.py
+    ├── test_centrality.py
     ├── test_community_detection.py
-    ├── test_loader.py
-    ├── test_explainability.py
     ├── test_correlation.py
+    ├── test_explainability.py
+    ├── test_loader.py
     ├── test_pagerank_sensitivity.py
     └── test_preprocessing.py
---- 
+```
+
+The project is organised into separate components for the Streamlit interface, network-analysis modules, utility functions, datasets, evaluation scripts and automated tests.
+
 
 8. Datasets
 
@@ -257,15 +265,15 @@ network.
 10. Dataset Setup
 
 Place the required raw datasets in the following locations:
-
+```text
 data/
 └── raw/
     ├── email_eu_core/
-    │   └── <Email-Eu-Core dataset files>
+    │   └── email-Eu-Core.txt
     │
     └── web_google/
         └── web-Google.txt
-
+```
 Zachary's Karate Club does not need to be stored locally because it is
 loaded directly from NetworkX.
 
